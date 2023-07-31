@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QBoLeph0aAdItnqNtrQI7f/ioGomEum/iXmxGbZu5ey40HbCGFMqPZNTmr1Px5f/j0kzNBxYXG57LDt6HXBKmg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\MazeGeneration\\MazeGeneratorLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.6.23329.7\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\7.0.7\\runtime.win-x64.microsoft.dotnet.ilcompiler.7.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

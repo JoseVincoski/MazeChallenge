@@ -1,0 +1,5 @@
+C:\Users\temp\Desktop\MazeChallenge\MazeApi\Helpers\obj\Debug\net7.0\Helpers.csproj.AssemblyReference.cache
+C:\Users\temp\Desktop\MazeChallenge\MazeApi\Helpers\obj\Debug\net7.0\Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\temp\Desktop\MazeChallenge\MazeApi\Helpers\obj\Debug\net7.0\Helpers.AssemblyInfoInputs.cache
+C:\Users\temp\Desktop\MazeChallenge\MazeApi\Helpers\obj\Debug\net7.0\Helpers.AssemblyInfo.cs
+C:\Users\temp\Desktop\MazeChallenge\MazeApi\Helpers\obj\Debug\net7.0\Helpers.csproj.CoreCompileInputs.cache
