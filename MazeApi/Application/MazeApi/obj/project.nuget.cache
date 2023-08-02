@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WJxnHoaHlLnil0eRFVDbR4ZFI8fAwAyxhHRh9tqODfvDprRJjKyLyLqKq+2u6xRTwZTlpGie96JGWsrjij/D1g==",
+  "dgSpecHash": "+LFH3uHQ7m3Gg2UFP+XOCFqoEZXj+ZKpjSnOozPydP1eSlhGZalI0McYIsGRq8ePZ0pkxchQ6MFiFG88hvasmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Application\\MazeApi\\MazeApi.csproj",
+  "projectFilePath": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Application\\MazeApi\\MazeApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\temp\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.0-preview.6.23329.4\\microsoft.data.sqlite.core.8.0.0-preview.6.23329.4.nupkg.sha512",
     "C:\\Users\\temp\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0-preview.6.23329.4\\microsoft.entityframeworkcore.8.0.0-preview.6.23329.4.nupkg.sha512",

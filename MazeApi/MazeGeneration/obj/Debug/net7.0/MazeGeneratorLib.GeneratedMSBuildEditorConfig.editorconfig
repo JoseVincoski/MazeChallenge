@@ -12,4 +12,4 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = MazeGeneratorLib
-build_property.ProjectDir = C:\Users\temp\Desktop\MazeChallenge\MazeApi\MazeGeneration\
+build_property.ProjectDir = C:\Users\temp\Desktop\Maze Projects\MazeChallenge\MazeApi\MazeGeneration\

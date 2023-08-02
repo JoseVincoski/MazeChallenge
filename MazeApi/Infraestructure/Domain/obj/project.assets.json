@@ -65,11 +65,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Infraestructure\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Infraestructure\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Infraestructure\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Infraestructure\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\temp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Infraestructure\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Infraestructure\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\temp\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"

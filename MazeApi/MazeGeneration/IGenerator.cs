@@ -1,4 +1,5 @@
-﻿using Domain.MazeGenerator;
+﻿using Domain;
+using Domain.MazeGenerator;
 using Domain.MazeGenerator.Enums;
 
 namespace MazeGeneratorLib
@@ -9,15 +10,18 @@ namespace MazeGeneratorLib
 
         public void GeneratePoints(ref Maze maze)
         {
-            maze.StartPosition = new MazePosition(1, 1);
-            maze.TargetPosition = maze.StartPosition;
+            var startPosition = new MazePosition(1, 1);
+            var targetPosition = new MazePosition(1, 1);
 
             Random rnd = new Random();
-            while (maze.TargetPosition.IsEqual(maze.StartPosition))
+            while (targetPosition.IsEqual(startPosition))
             {
-                maze.TargetPosition.Y = rnd.Next(maze.Height / 2) * 2 + 1;
-                maze.TargetPosition.X = rnd.Next(maze.Width / 2) * 2 + 1;
+                targetPosition.Y = rnd.Next(maze.Height / 2) * 2 + 1;
+                targetPosition.X = rnd.Next(maze.Width / 2) * 2 + 1;
             }
+
+            maze.Tiles[startPosition.Y, startPosition.X] = (int)TileType.StartPoint;
+            maze.Tiles[targetPosition.Y, targetPosition.X] = (int)TileType.TargetPoint;
         }
 
         public void GenerateBase(ref Maze maze)
@@ -27,10 +31,11 @@ namespace MazeGeneratorLib
                 for (int column = 0; column < maze.Width; column++)
                 {
                     //Generate Frame
-                    if (row == 0 || column == 0) maze.Tiles[row, column] = (int)TileType.SolidWall;
-                    else if (row == maze.Height - 1 || column == maze.Width - 1) maze.Tiles[row, column] = (int)TileType.SolidWall;
+                    if (row == 0 || column == 0) maze.Tiles[row, column] = (int)TileType.BaseWall;
+                    else if (row == maze.Height - 1 || column == maze.Width - 1) maze.Tiles[row, column] = (int)TileType.BaseWall;
                     //Generate inside base walls
-                    else if (column % 2 == 0 || row % 2 == 0) maze.Tiles[row, column] = (int)TileType.MovableWall;
+                    else if (column.IsEven() && row.IsEven()) maze.Tiles[row, column] = (int)TileType.BaseWall;
+                    else if (column.IsEven() || row.IsEven()) maze.Tiles[row, column] = (int)TileType.MovableWall;
                 }
             }
         }

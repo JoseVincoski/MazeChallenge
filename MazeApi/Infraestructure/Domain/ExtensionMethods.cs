@@ -1,7 +1,8 @@
-﻿using System.Collections;
+﻿using Domain.MazeGenerator.Enums;
+using System.Collections;
 using System.Collections.Generic;
 
-namespace Extensions
+namespace Domain
 {
     public static class ExtensionMethods
     {
@@ -11,11 +12,11 @@ namespace Extensions
         }
         public static bool IsEven(this int source)
         {
-            return source % 2 != 0;
+            return source % 2 == 0;
         }
         public static bool IsOdd(this int source)
         {
-            return source % 2 == 0;
+            return source % 2 != 0;
         }
     }
 }

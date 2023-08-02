@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeApi", "Application\Maze
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeGeneratorLib", "MazeGeneration\MazeGeneratorLib.csproj", "{86DF3B62-2DA0-426B-AD76-24BAD93A0206}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Helpers\Extensions.csproj", "{B35888BF-553F-4C97-9B83-596141E47890}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{86DF3B62-2DA0-426B-AD76-24BAD93A0206}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86DF3B62-2DA0-426B-AD76-24BAD93A0206}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86DF3B62-2DA0-426B-AD76-24BAD93A0206}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B35888BF-553F-4C97-9B83-596141E47890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B35888BF-553F-4C97-9B83-596141E47890}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B35888BF-553F-4C97-9B83-596141E47890}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B35888BF-553F-4C97-9B83-596141E47890}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,7 +48,6 @@ Global
 		{FE0B8A4F-0BAA-44B0-B507-3C02E6644344} = {3765AAEF-5768-4BF8-ACB0-FE5854CC5788}
 		{A94FA529-0D30-4165-A4DA-D01959160937} = {1374E01F-5D3A-4166-98CA-BC904BD00B0A}
 		{86DF3B62-2DA0-426B-AD76-24BAD93A0206} = {03859B55-D2AE-409A-8177-477086E2752C}
-		{B35888BF-553F-4C97-9B83-596141E47890} = {3765AAEF-5768-4BF8-ACB0-FE5854CC5788}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E21A942-0299-4781-AF54-8334A2468127}

@@ -1,5 +1,5 @@
-﻿using Domain.MazeGenerator;
-using Extensions;
+﻿using Domain;
+using Domain.MazeGenerator;
 
 namespace MazeGeneratorLib.V1
 {
@@ -10,6 +10,11 @@ namespace MazeGeneratorLib.V1
         {
             if (seed != null) rnd = new Random((int)seed);
             else rnd = new Random((int)DateTime.Now.Ticks);
+        }
+
+        public MazeGenV1()
+        {
+            rnd = new Random((int)DateTime.Now.Ticks);
         }
 
         public void GenerateMaze(ref Maze maze)

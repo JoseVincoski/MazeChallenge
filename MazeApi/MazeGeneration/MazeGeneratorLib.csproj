@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Helpers\Extensions.csproj" />
     <ProjectReference Include="..\Infraestructure\Domain\Domain.csproj" />
   </ItemGroup>
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NPEyzZwP+4KlnSTi7KQS1ZvJMvj637Boj73qf3rswe1Q3sGOfHK/oAfk+A/IYjOgTUhOGn71vhq2asnfO7KwKg==",
+  "dgSpecHash": "58uGnQwChVUJz05Vp5N86fwznRSJQ3QaRotcmT8CjcS4kMoKxc4joASTMEz9tlovJ8/GcE/gp+1w0V3beHZkOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Infraestructure\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Infraestructure\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.6.23329.7\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.6.23329.7.nupkg.sha512"
   ],

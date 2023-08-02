@@ -11,6 +11,9 @@
             X = _x;
         }
 
+        //Used for Desserialization
+        public MazePosition() { }
+
         public bool IsEqual(MazePosition otherMazePosition)
         {
             return Y == otherMazePosition.Y && X == otherMazePosition.X;

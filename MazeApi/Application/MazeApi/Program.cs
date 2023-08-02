@@ -11,7 +11,6 @@ namespace MazeApi
 
             builder.Services
                 //.AddAppDbContext(builder.Configuration.GetValue<string>("ConnectionString"))
-                .AddScoped<IGenerator, MazeGenV2>()
                 .AddCors();
 
             builder.Services.AddControllers();

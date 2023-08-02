@@ -3,11 +3,15 @@
     public enum TileType
     {
         Path = 0,
-        MovableWall = 1,
-        SolidWall = 2,
-        Start = 3,
-        Target = 4,
-        OutsideFrame = 5,
-        VerifiedPath = 6,
+        VerifiedPath = 1,
+        
+        BaseWall = 2,
+        MovableWall = 3,
+        SolidWall = 4,
+
+        StartPoint = 5,
+        TargetPoint = 6,
+
+        OutsideFrame = 7,
     }
 }

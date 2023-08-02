@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "MazeGeneratorLib/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0",
-          "Extensions": "1.0.0"
+          "Domain": "1.0.0"
         },
         "runtime": {
           "MazeGeneratorLib.dll": {}
@@ -30,11 +29,6 @@
         "runtime": {
           "Domain.dll": {}
         }
-      },
-      "Extensions/1.0.0": {
-        "runtime": {
-          "Extensions.dll": {}
-        }
       }
     }
   },
@@ -52,11 +46,6 @@
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.6.23329.7.nupkg.sha512"
     },
     "Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Extensions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

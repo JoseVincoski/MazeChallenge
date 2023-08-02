@@ -1802,11 +1802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Application\\MazeApi\\MazeApi.csproj",
+      "projectUniqueName": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Application\\MazeApi\\MazeApi.csproj",
       "projectName": "MazeApi",
-      "projectPath": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Application\\MazeApi\\MazeApi.csproj",
+      "projectPath": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Application\\MazeApi\\MazeApi.csproj",
       "packagesPath": "C:\\Users\\temp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Application\\MazeApi\\obj\\",
+      "outputPath": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Application\\MazeApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\temp\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
@@ -1829,11 +1829,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Infraestructure\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\Infraestructure\\Repository\\Repository.csproj"
+            "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Infraestructure\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\Infraestructure\\Repository\\Repository.csproj"
             },
-            "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\MazeGeneration\\MazeGeneratorLib.csproj": {
-              "projectPath": "C:\\Users\\temp\\Desktop\\MazeChallenge\\MazeApi\\MazeGeneration\\MazeGeneratorLib.csproj"
+            "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\MazeGeneration\\MazeGeneratorLib.csproj": {
+              "projectPath": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeChallenge\\MazeApi\\MazeGeneration\\MazeGeneratorLib.csproj"
             }
           }
         }
