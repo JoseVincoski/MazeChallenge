@@ -2,8 +2,6 @@
 using Domain.MazeGenerator;
 using Domain.MazeGenerator.Enums;
 using Domain.MazeGenerator.MazeGenV2Models;
-using System.Drawing;
-using System.Numerics;
 
 namespace MazeGeneratorLib.V2
 {

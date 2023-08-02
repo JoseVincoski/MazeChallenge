@@ -20,9 +20,9 @@ namespace MazeApi.Controllers
         [SwaggerOperation("Generates and returns a Maze of given Height and Width")]
         [SwaggerResponse(StatusCodes.Status200OK, "Maze successfuly generated and returned", typeof(ActionResult<bool>))]
         [SwaggerResponse(StatusCodes.Status400BadRequest, "Error while generating maze", typeof(ActionResult<bool>))]
-        public async Task<IActionResult> GenerateMaze([FromQuery] int mazeHeight, [FromQuery] int mazeWidth)
+        public async Task<IActionResult> GenerateMaze([FromQuery] int mazeHeight, [FromQuery] int mazeWidth, [FromQuery] int? mazeSeed)
         {
-            var generator = new MazeGenerator(new MazeGeneratorLib.V2.MazeGenV2(), mazeHeight, mazeWidth);
+            var generator = new MazeGenerator(new MazeGeneratorLib.V2.MazeGenV2(mazeSeed), mazeHeight, mazeWidth);
             var generatedMaze = generator.GetMaze();
 
             var response = JsonSerializer.Serialize(generatedMaze, serializerOptions);
