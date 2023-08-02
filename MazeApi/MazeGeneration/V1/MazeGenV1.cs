@@ -38,5 +38,5 @@ namespace MazeGeneratorLib.V1
         }
     }
 
-    //This generator is completelly random. It not necessarelly generates a path between the start and the target
+    //This generator is completelly random. It doesn't necessarelly generates a path between the start and the target
 }

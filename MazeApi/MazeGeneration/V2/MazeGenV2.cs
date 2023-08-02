@@ -45,10 +45,7 @@ namespace MazeGeneratorLib.V2
                         }
 
                         //Set current path as verified path
-                        if (maze.Tiles[row, column] != (int)TileType.StartPoint && maze.Tiles[row, column] != (int)TileType.TargetPoint)
-                        {
-                            maze.Tiles[row, column] = (int)TileType.VerifiedPath;
-                        }
+                        maze.Tiles[row, column] = (int)TileType.VerifiedPath;
                     }
                 }
             }
@@ -59,4 +56,6 @@ namespace MazeGeneratorLib.V2
             return rnd.Next(1, value);
         }
     }
+
+    //This generator is not good. It doesn't necessarelly generates a path between the start and the target
 }

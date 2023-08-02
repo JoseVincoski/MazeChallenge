@@ -17,8 +17,8 @@ namespace MazeGeneratorLib
 
         public Maze GetMaze()
         {
-            Generator.GeneratePoints(ref Maze);
             Generator.GenerateMaze(ref Maze);
+            Generator.GeneratePoints(ref Maze);
 
             return Maze;
         }
