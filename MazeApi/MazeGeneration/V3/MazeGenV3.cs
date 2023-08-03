@@ -27,28 +27,40 @@ namespace MazeGeneratorLib.V3
             _maze = maze;
             FillMazePathPositions();
 
-            MazePosition position = new MazePosition(1, 1);
+            MazePosition position = GetRandomUnverifiedPathPosition();
+            Queue<MazePosition> recentlyVerifiedPaths = new Queue<MazePosition>();
+
             while (_unverifiedPathPositions.Count != 0)
             {
                 //Set current path as Verified Path
                 _maze.Tiles[position.Y, position.X] = (int)TileType.VerifiedPath;
                 var pathToRemove = _unverifiedPathPositions.SingleOrDefault(p => p.Y == position.Y && p.X == position.X);
-                if (pathToRemove != null) _unverifiedPathPositions.Remove(pathToRemove);
+                if (pathToRemove != null) 
+                    _unverifiedPathPositions.Remove(pathToRemove);
+
+                //Add path to list of currently verified paths
+                recentlyVerifiedPaths.Enqueue(pathToRemove);
 
                 //Carve wall
                 var tilesAroundInfo = new TilesAroundInfo(_maze, position.Y, position.X);
-                if (tilesAroundInfo.MovableWalls.Count > 1)
+
+                var movableWalls = tilesAroundInfo.MovableWalls;
+                if (recentlyVerifiedPaths.Count > 3)
                 {
-                    var wallToChange = tilesAroundInfo.MovableWalls.GetRandomElement<TileInfo>(rnd);
+                    var wallToIgnore = recentlyVerifiedPaths.Dequeue();
+                    movableWalls = movableWalls.FindAll(mw => mw.NextPosition.IsEqual(wallToIgnore) == false);
+                }
+
+                if (movableWalls.Count > 1)
+                {
+                    var wallToChange = movableWalls.GetRandomElement<TileInfo>(rnd);
                     _maze.Tiles[wallToChange.Position.Y, wallToChange.Position.X] = (int)TileType.Path;
                     position = wallToChange.NextPosition;
                 }
 
                 //If new position is verified path, get new unverified path.
                 if (_maze.Tiles[position.Y, position.X] == (int)TileType.VerifiedPath && _unverifiedPathPositions.Count != 0)
-                {
                     position = GetRandomUnverifiedPathPosition();
-                }
             }
         }
 

@@ -11,14 +11,7 @@ namespace MazeGeneratorLib
         public void GeneratePoints(ref Maze maze)
         {
             var startPosition = new MazePosition(1, 1);
-            var targetPosition = new MazePosition(1, 1);
-
-            Random rnd = new Random();
-            while (targetPosition.IsEqual(startPosition))
-            {
-                targetPosition.Y = rnd.Next(maze.Height / 2) * 2 + 1;
-                targetPosition.X = rnd.Next(maze.Width / 2) * 2 + 1;
-            }
+            var targetPosition = new MazePosition(maze.Height-2, maze.Width-2);
 
             maze.Tiles[startPosition.Y, startPosition.X] = (int)TileType.StartPoint;
             maze.Tiles[targetPosition.Y, targetPosition.X] = (int)TileType.TargetPoint;
